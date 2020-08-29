@@ -18,3 +18,8 @@ function gerarNumero() {
     
     resultado.innerHTML = `Número aleatório entre 0 e 50:<br>${gerar}`
 }
+
+function divisao() {
+    const resto = 25 % 3
+    resultado.innerHTML = `Resto de 25 dividido por 3: ${resto}`
+}
