@@ -14,11 +14,12 @@ body {
 }
 
 section {
-    width: 80vw;
-    height: 80vh;
+    overflow: hidden;
+    width: 70vw;
+    height: 70vh;
     background-color: rgb(214, 255, 221);
     box-shadow: black 4px 4px 7px;
-    border-radius: 18px;
+    border-radius: 10px;
     padding: 15px;
 }
 
@@ -35,4 +36,11 @@ a {
 
 a:hover {
     color: var(--color-button-hover);
+}
+
+#resultados {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50vh;
+    background-color: rgba(0, 0, 0, 0.253);
 }
