@@ -23,3 +23,26 @@ function divisao() {
     const resto = 25 % 3
     resultado.innerHTML = `Resto de 25 dividido por 3: ${resto}`
 }
+
+const texto1 = document.querySelector('#texto1')
+// texto1.setAttribute('placeholder', 'teste')
+texto1.addEventListener("focusin", () => texto1.setAttribute("value", "Caixa de texto ativa"))
+texto1.addEventListener("focusout", () => texto1.setAttribute("value", "Perdeu o foco!"))
+
+function exec7() {
+    const cxTxt = document.querySelector('#texto7').value
+    const num = Number(cxTxt)
+
+    if (cxTxt == '') {
+        alert('Digite um número no exercício 7')
+    } else {
+        if (num >= 0 && num < 10) {
+            resultado.innerHTML = 'Insufiente'
+        } else if (num >= 10 && num < 14) {
+            resultado.innerHTML = 'Bom'
+        } else if (num >= 14) {
+            resultado.innerHTML = 'Muito Bom!'
+        }
+    }
+
+}
